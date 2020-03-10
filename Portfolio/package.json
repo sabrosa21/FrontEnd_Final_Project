@@ -7,6 +7,10 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "gridsome": "^0.7.0"
+    "gridsome": "^0.7.0",
+    "stylelint-scss": "^3.14.2"
+  },
+  "devDependencies": {
+    "stylelint": "^13.2.1"
   }
 }
