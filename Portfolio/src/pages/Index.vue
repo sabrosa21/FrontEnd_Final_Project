@@ -1,5 +1,7 @@
 <template>
-  <Layout></Layout>
+  <Layout>
+    <g-image class="mainImage" src="~/assets/images/starterPage.png"></g-image>
+  </Layout>
 </template>
 
 <script>
@@ -7,7 +9,8 @@ import burgerMenu from "@/components/burgerMenu";
 
 export default {
   metaInfo: {
-    title: "Hello, world!"
+    //********* Titulo que aparece na tab
+    title: "Home"
   },
   components: {
     burgerMenu
@@ -16,4 +19,12 @@ export default {
 </script>
 
 <style>
+.mainImage {
+  width: 85%;
+  height: auto;
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 </style>

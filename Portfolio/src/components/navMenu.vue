@@ -1,5 +1,5 @@
 <template>
-  <div class="nav-menu">
+  <div>
     <ul>
       <li>
         <g-link to="/">
@@ -42,8 +42,4 @@ export default {
 </script>
 
 <style lang="scss">
-.nav-menu {
-  display: flex;
-  flex-direction: column;
-}
 </style>

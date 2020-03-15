@@ -18,15 +18,19 @@ ul{
 
 //******** Style the nav itens
 .navIcon{
-  color: $greyLight;
-  width: 2.5rem;
+  fill: $greyLight;
   height: 2.5rem;
   padding: 20% 0;
+  width: 2.5rem;
+  &:hover{
+    fill: $greenLight;
+  }
 }
 
+
 //******** Color the selected nav item
-.active--exact{
-  color: $greenLight !important;
+.active--exact svg{
+  fill: $greenLight !important;
 }
 
 
