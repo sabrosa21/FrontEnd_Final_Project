@@ -107,9 +107,6 @@ export default {
     opacity: 0;
     animation: opacity 0.25s ease-in-out 0.2s forwards;
     transition: 0.2s 0s ease-in-out;
-    li {
-      list-style: none;
-    }
   }
 
   @-webkit-keyframes opacity {

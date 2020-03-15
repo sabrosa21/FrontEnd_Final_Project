@@ -3,6 +3,36 @@
 @import 'base';
 @import 'mixins';
 
+// **********************************
+// ********* General Styles *********
+// **********************************
+
+//******** Remove all li styles
+li{
+  list-style-type: none;
+}
+//******** Don't know why but the system is applying a padding to all UL's
+ul{
+  padding: 0;
+}
+
+//******** Style the nav itens
+.navIcon{
+  color: $greyLight;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 20% 0;
+}
+
+//******** Color the selected nav item
+.active--exact{
+  color: $greenLight !important;
+}
+
+
+// ********************************************
+// ********* Media Queries Aplication *********
+// ********************************************
 
 @include for-size(tablet-portrait){
   .burger{
