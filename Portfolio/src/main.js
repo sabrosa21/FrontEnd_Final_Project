@@ -1,9 +1,17 @@
-// This is the main.js file. Import global CSS and scripts here.
-// The Client API can be used here. Learn more: gridsome.org/docs/client-api
-
+//********* Link para usar a font League Spartan *********
+//********* Importada de https://github.com/KyleAMathews/typefaces/tree/master/packages/league-spartan*********
+require('typeface-league-spartan')
+//********* Link para usar o ficheiro main.scss *********
+import './assets/styles/main.scss'
 import DefaultLayout from '~/layouts/Default.vue'
 
 export default function (Vue, { router, head, isClient }) {
-  // Set default layout as a global component
+
+
+  //********* Link para usar a font Oswald *********
+  /* head.link.push({
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap'
+  }) */
   Vue.component('Layout', DefaultLayout)
 }

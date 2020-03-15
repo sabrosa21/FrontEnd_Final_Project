@@ -1,0 +1,21 @@
+// *********************************
+// ********* Media Queries *********
+// *********************************
+
+@mixin for-size($size) {
+  @if $size == phone-only {
+    @media (max-width: $mobileOnly) { @content; }
+  } @else if $size == tablet-portrait {
+    @media (min-width: $tabletPort) { @content; }
+  } @else if $size == tablet-landscape {
+    @media (min-width: $tabletLand) { @content; }
+  } @else if $size == desktop {
+    @media (min-width: $desktop) { @content; }
+  } @else if $size == big-desktop {
+    @media (min-width: $bigDesktop) { @content; }
+  }
+}
+
+
+
+

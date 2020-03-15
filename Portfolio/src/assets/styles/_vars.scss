@@ -1,0 +1,26 @@
+// *******************************
+// ********* Color stack *********
+// *******************************
+
+$bgColor: #1F2833;
+$greenLight: #66FCF1;
+$greenDark: #45A29E;
+$greyLight: #C5C6C7;
+
+// *********************************
+// ********* Media Queries *********
+// *********************************
+
+$mobileOnly: 599px;
+$tabletPort: 600px;
+$tabletLand: 900px;
+$desktop: 1200px;
+$bigDesktop: 1800px;
+
+// *************************
+// ********* Fonts *********
+// *************************
+
+$backupFont: '-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif';
+$primaryFont: 'League Spartan', $backupFont;
