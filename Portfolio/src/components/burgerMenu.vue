@@ -34,9 +34,9 @@ export default {
 <style lang="scss">
 .burger {
   .menu {
-    position: absolute;
-    right: -100px;
-    top: -100px;
+    position: fixed;
+    right: -120px;
+    top: -120px;
     z-index: 100;
     width: 200px;
     height: 200px;
@@ -48,8 +48,8 @@ export default {
   }
   .hamburger {
     position: absolute;
-    top: 135px;
-    left: 50px;
+    top: 145px;
+    left: 35px;
     width: 30px;
     height: 2px;
     background: #66fcf1;

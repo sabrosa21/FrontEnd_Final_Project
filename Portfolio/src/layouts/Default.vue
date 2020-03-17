@@ -3,7 +3,7 @@
     <burgerMenu />
     <navMenu id="nav-right" />
     <navSocial id="nav-left" />
-    <slot />
+    <slot class="teste" />
   </div>
 </template>
 
@@ -24,6 +24,10 @@ export default {
 <style>
 body {
   overflow-x: hidden;
+}
+
+.teste {
+  z-index: 999;
 }
 
 #nav-right {

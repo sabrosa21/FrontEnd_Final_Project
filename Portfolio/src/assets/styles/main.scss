@@ -7,15 +7,6 @@
 // ********* General Styles *********
 // **********************************
 
-//******** Remove all li styles
-li{
-  list-style-type: none;
-}
-//******** Don't know why but the system is applying a padding to all UL's
-ul{
-  padding: 0;
-}
-
 //******** Style the nav itens
 .navIcon{
   fill: $greyLight;
@@ -27,17 +18,31 @@ ul{
   }
 }
 
-
 //******** Color the selected nav item
 .active--exact svg{
   fill: $greenLight !important;
+  color: red;
 }
 
+.mainTitle{
+  text-align: center;
+  color: $greenLight;
+  font-size: 4rem;
+  margin-top: 50px;
+}
 
 // ********************************************
 // ********* Media Queries Aplication *********
 // ********************************************
 
+@include for-size(phone-only){
+  //******** Remove menu and social navs
+  #nav-right, #nav-left{
+    display: none;
+  }
+}
+
+//******** Remove burger menu
 @include for-size(tablet-portrait){
   .burger{
     display: none;

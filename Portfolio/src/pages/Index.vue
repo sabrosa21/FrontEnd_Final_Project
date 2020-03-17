@@ -20,7 +20,7 @@ export default {
 
 <style>
 .mainImage {
-  width: 85%;
+  width: 80%;
   height: auto;
   position: fixed;
   top: 55%;
