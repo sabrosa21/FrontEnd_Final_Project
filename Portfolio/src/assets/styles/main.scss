@@ -16,14 +16,19 @@
   &:hover{
     fill: $greenLight;
   }
+  
 }
 
 //******** Color the selected nav item
-.active--exact svg{
-  fill: $greenLight !important;
-  color: red;
+.active--exact{
+  color: $greenLight !important;
 }
 
+.active--exact > svg{
+  fill: $greenLight !important;
+}
+
+//******** Style for all main titles (Home, About, etc)
 .mainTitle{
   text-align: center;
   color: $greenLight;
