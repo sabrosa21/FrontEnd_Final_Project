@@ -1,2 +1,16 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css);
 
+//******** Remove all li styles
+li{
+  list-style-type: none;
+}
+
+//******** Don't know why but the system is applying a padding to all UL's
+ul{
+  padding: 0;
+}
+
+h1,h2,h3,p{
+  margin: 0;
+  padding: 0;
+}
