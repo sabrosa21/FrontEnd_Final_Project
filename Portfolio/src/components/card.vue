@@ -1,18 +1,19 @@
 <template>
   <div class="card">
-    <g-image class="cardImage" src="~/assets/images/starter_page2_rasterized.png" />
+    <g-image class="cardImage" :src= cardImg />
     <div class="cardContent">
-      <h3>title of the prject</h3>
+      <h3>{{cardTitle}}</h3>
       <!-- Project type: Training, Professional -->
-      <p>Project type:</p>
+      <p>Project type: {{cardProjtype}}</p>
     </div>
-
     <div class="cardStack">
-      <p>teste</p>
+      <p>{{cardStack}}</p>
     </div>
 
     <div class="cardGithub">
-      <githubCard class="giticon" />
+      <a :href= cardGitlink target="_blank" rel="noopener noreferrer">
+        <githubCard class="giticon" />
+      </a>
     </div>
   </div>
 </template>
@@ -23,6 +24,28 @@ import githubCard from "~/assets/icons/githubCard.svg";
 export default {
   components: {
     githubCard
+  },
+  props: {
+    cardImg: {
+      type: String,
+      required: true
+    },
+    cardTitle: {
+      type: String,
+      required: true
+    },
+    cardProjtype: {
+      type: String,
+      required: true
+    },
+    cardStack: {
+      type: String,
+      required: true
+    },
+    cardGitlink: {
+      type: String,
+      required: true
+    }
   }
 };
 </script>
@@ -38,6 +61,9 @@ export default {
   white-space: nowrap;
   border-radius: 5px;
   margin-bottom: 30px;
+  &:hover {
+    box-shadow: 0 0 20px rgba(101, 250, 239, 0.5);
+  }
 }
 .cardImage {
   width: 50%;
@@ -64,17 +90,18 @@ export default {
   border-radius: 0 0 5px 5px;
 }
 
-.cardGithub {
+.cardGithub a {
   align-items: center;
   background: black;
-  border-radius: 50%;
+  border-radius: 100%;
   display: flex;
   height: 40px;
   justify-content: center;
   position: absolute;
-  transform: translate(200px, 100px);
-  transition: 0.1s ease-in;
+  transform: translate(200px, -105px);
+  transition: 0.2s ease-in;
   width: 40px;
+  //border: 1px solid #66fcf1;
   .giticon {
     color: #66fcf1;
   }
