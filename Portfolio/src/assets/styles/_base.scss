@@ -1,6 +1,20 @@
 body{
   font-family: $primaryFont;
   background-color: $bgColor;
+  font-size: $fontSize;
   //overflow: hidden;
+}
+
+//******** Style for all main titles (Home, About, etc)
+.mainTitle{
+  color: $greenLight;
+  font-size: 4rem;
+  margin-top: 50px;
+  //text-align: center;
+}
+
+//******** Style for all common text
+.commonText{
+  font-family: $secondaryFont;
 }
 

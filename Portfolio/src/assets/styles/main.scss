@@ -28,13 +28,6 @@
   fill: $greenLight !important;
 }
 
-//******** Style for all main titles (Home, About, etc)
-.mainTitle{
-  color: $greenLight;
-  font-size: 4rem;
-  margin-top: 50px;
-  text-align: center;
-}
 
 // ********************************************
 // ********* Media Queries Aplication *********
@@ -45,11 +38,23 @@
   #nav-right, #nav-left{
     display: none;
   }
+  .mainTitle{
+    padding-left: 6%;
+  }
+  .commonText{
+    font-size: 1rem;
+  }
 }
 
 //******** Remove burger menu
 @include for-size(tablet-portrait){
   .burger{
     display: none;
+  }
+  .mainTitle{
+    text-align: center;
+  }
+  .commonText{
+    font-size: 1.2rem;
   }
 }

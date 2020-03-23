@@ -8,10 +8,10 @@ import DefaultLayout from '~/layouts/Default.vue'
 export default function (Vue, { router, head, isClient }) {
 
 
-  //********* Link para usar a font Oswald *********
-  /* head.link.push({
+  //********* Link para usar a font Libre Baskerville *********
+  head.link.push({
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap'
-  }) */
+    href: 'https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap'
+  })
   Vue.component('Layout', DefaultLayout)
 }

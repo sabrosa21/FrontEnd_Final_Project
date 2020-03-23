@@ -22,9 +22,9 @@ export default {
 </script>
 
 <style lang="scss">
-body {
+/* body {
   overflow-x: hidden;
-}
+} */
 
 #nav-right {
   position: fixed;
