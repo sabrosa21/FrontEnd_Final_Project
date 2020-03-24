@@ -24,6 +24,10 @@
           <label for="email">Your email</label>
           <input type="email" name="email" v-model="formData.email" />
         </div>
+        <div>
+          <label for="subject">Email subject</label>
+          <input type="text" name="subject" v-model="formData.subject" />
+        </div>
       </div>
 
       <div class="message-wrapper">
@@ -66,6 +70,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss">
-</style>
