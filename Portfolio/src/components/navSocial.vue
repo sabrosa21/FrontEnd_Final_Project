@@ -1,19 +1,22 @@
 <template>
   <div>
     <ul>
-      <li>
+      <li class="navLi">
         <a href="mailto:euricolcorreia@outlook.pt">
           <email class="navIcon" />
+          <div class="textNav navMenu1">Email</div>
         </a>
       </li>
-      <li>
+      <li class="navLi">
         <a href="https://pt.linkedin.com/in/euricocorreia/" target="_blank">
           <linkedin class="navIcon" />
+          <div class="textNav navMenu5">Linkedin</div>
         </a>
       </li>
-      <li>
+      <li class="navLi">
         <a href="https://github.com/sabrosa21" target="_blank">
           <github class="navIcon" />
+          <div class="textNav navMenu6">GitHub</div>
         </a>
       </li>
     </ul>
