@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="commonText">
     <form
       name="contact"
       method="post"
@@ -17,25 +17,21 @@
       </p>
       <div class="sender-info">
         <div>
-          <label for="name" class="label">Your name</label>
-          <input type="text" name="name" v-model="formData.name" />
+          <input type="text" name="name" v-model="formData.name" placeholder="Name" />
         </div>
         <div>
-          <label for="email">Your email</label>
-          <input type="email" name="email" v-model="formData.email" />
+          <input type="email" name="email" v-model="formData.email" placeholder="Email" />
         </div>
         <div>
-          <label for="subject">Email subject</label>
-          <input type="text" name="subject" v-model="formData.subject" />
+          <input type="text" name="subject" v-model="formData.subject" placeholder="Subject" />
         </div>
       </div>
 
       <div class="message-wrapper">
-        <label for="message">Message</label>
-        <textarea name="message" v-model="formData.message"></textarea>
+        <textarea name="message" v-model="formData.message" placeholder="Message..."></textarea>
       </div>
 
-      <button type="submit">Submit form</button>
+      <button type="submit">Send</button>
     </form>
   </div>
 </template>

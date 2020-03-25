@@ -22,9 +22,9 @@ export default {
 </script>
 
 <style lang="scss">
-/* body {
-  overflow-x: hidden;
-} */
+.layout {
+  margin: 2.5% 8%;
+}
 
 #nav-right {
   position: fixed;

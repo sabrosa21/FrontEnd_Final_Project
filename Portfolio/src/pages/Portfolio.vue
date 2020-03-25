@@ -88,11 +88,16 @@ export default {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-
+  align-items: center;
+  height: 80vh;
   .eachCard {
     display: flex;
     justify-content: center;
     flex-basis: 30%;
+    margin: 1%;
+    .card {
+      margin: 0;
+    }
   }
 }
 </style>

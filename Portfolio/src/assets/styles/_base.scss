@@ -2,6 +2,8 @@ body{
   font-family: $primaryFont;
   background-color: $bgColor;
   font-size: $fontSize;
+  display: flex;
+  justify-content: center;
   //overflow: hidden;
 }
 
@@ -9,12 +11,13 @@ body{
 .mainTitle{
   color: $greenLight;
   font-size: 4rem;
-  margin-top: 50px;
-  //text-align: center;
+  margin: 50px 0 25px;
+  text-align: center;
 }
 
 //******** Style for all common text
 .commonText{
   font-family: $secondaryFont;
+  margin-bottom: 1.5rem;
 }
 

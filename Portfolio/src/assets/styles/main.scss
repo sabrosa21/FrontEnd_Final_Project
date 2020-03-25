@@ -38,23 +38,94 @@
   #nav-right, #nav-left{
     display: none;
   }
-  .mainTitle{
-    padding-left: 6%;
-  }
+
   .commonText{
     font-size: 1rem;
+  }
+
+  .contactForm{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@include for-size(tablet-portrait){
+  //******** Remove menu and social navs
+  #nav-right, #nav-left{
+    display: none;
+  }
+
+  .contactForm{
+    flex-direction: column;
+    margin: 10% 13%;
   }
 }
 
 //******** Remove burger menu
-@include for-size(tablet-portrait){
+@include for-size(tablet-landscape){
   .burger{
     display: none;
   }
-  .mainTitle{
-    text-align: center;
+
+  #nav-right, #nav-left{
+    display: block;
   }
+
   .commonText{
     font-size: 1.2rem;
+  }
+
+  .contactForm{
+    margin: 0 15%;
+    p{
+      padding: 0 5rem;
+      margin: 2%
+    }
+
+    .cform {
+      font-size: 1rem;
+      form{
+        ::placeholder{
+          font-size: 0.9rem !important;
+        }
+        textarea{
+          height: 10rem !important; 
+        }
+      }
+      
+    }
+  }
+}
+
+@include for-size(desktop){
+
+  .contactForm{
+    flex-direction: row;
+    height: 60vh;
+    p{
+      padding: 0 2rem;
+    }
+
+    .cform {
+      font-size: 1rem;
+      form{
+        ::placeholder{
+          font-size: 0.9rem !important;
+        }
+        textarea{
+          height: 8rem !important; 
+        }
+      }
+      
+    }
+  }
+}
+
+@include for-size(big-desktop){
+  .contactForm{
+    flex-direction: row;
+    p{
+      padding: 0 6rem;
+    }
   }
 }
