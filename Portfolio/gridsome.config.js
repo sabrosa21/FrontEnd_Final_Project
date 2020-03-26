@@ -6,6 +6,12 @@
 
 module.exports = {
   siteName: 'ECPortfolio',
+  siteUrl: "https://ecportfolio.netlify.com",
+  siteDescription:
+    "Eurico Correia's portfolio intends to show a little bit about him and his work. Take a look!",
+  icon: {
+    favicon: "./src/assets/icons/favicon.png"
+  },
   chainWebpack: config => {
     const svgRule = config.module.rule('svg')
     svgRule.uses.clear()

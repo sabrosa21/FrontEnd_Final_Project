@@ -1,8 +1,9 @@
 <template>
   <div class="skills">
     <div class="eachSkill" v-for="skill in skills" :key="skill.id">
-      <div v-html="skill.svg"></div>
+      <div v-html="skill.text"></div>
       <!-- <bootstrap class="skill" /> -->
+      <!-- <div :style="{backgroundImage: 'url(\'' + skill.svg + '\')' }"></div> -->
     </div>
   </div>
 </template>
@@ -44,7 +45,7 @@ export default {
       skills: [
         {
           id: 1,
-          svg: "bootstrap",
+          svg: bootstrap,
           text: "Bootstrap 4"
         },
         {

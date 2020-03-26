@@ -6,7 +6,7 @@ import './assets/styles/main.scss'
 import DefaultLayout from '~/layouts/Default.vue'
 
 export default function (Vue, { router, head, isClient }) {
-
+  head.htmlAttrs = { lang: 'en' }
 
   //********* Link para usar a font Libre Baskerville *********
   head.link.push({
