@@ -49,7 +49,7 @@
             </div>
             <div class="modal-footer">
               <!-- <button class="modal-default-button" @click="showModal = false">OK</button> -->
-              <button class="modal-default-button" @click="showModal = false && reset.reset()">OK</button>
+              <button class="modal-default-button" @click="showModal = false">OK</button>
             </div>
           </div>
         </div>
@@ -63,8 +63,7 @@ export default {
   data() {
     return {
       formData: {},
-      showModal: false,
-      reset: document.getElementsByName("contact")
+      showModal: false
     };
   },
   methods: {
