@@ -7,8 +7,8 @@
 // ********* General Styles *********
 // **********************************
 
+//******** Style the nav itens
 .navLi{
-  //******** Style the nav itens
   text-align: center;
 
   .navIcon{
@@ -35,9 +35,9 @@
 
     .textNav{
       opacity: 1;
-      fill: $greenLight;
     }
   }
+
 
   .navMenu1{
     top: 40px;
@@ -67,15 +67,25 @@
     right: -3.5px;
   }
 
-}
+  //******** Color the selected nav item
+  .active--exact{
+    color: $greenLight !important;
 
-//******** Color the selected nav item
-.active--exact{
-  color: $greenLight !important;
-}
+    .navIcon{
+      opacity: 0;
+    }
 
-.active--exact > svg{
-  fill: $greenLight !important;
+    .textNav{
+      opacity: 1;
+      color: $greenLight;
+    }
+
+  }
+
+  .active--exact > svg{
+    fill: $greenLight !important;
+  }
+
 }
 
 
@@ -83,6 +93,7 @@
 // ********* Media Queries Aplication *********
 // ********************************************
 
+//******** Phone only
 @include for-size(phone-only){
   //******** Remove menu and social navs
   #nav-right, #nav-left{
@@ -99,6 +110,7 @@
   }
 }
 
+//******** Tablet Portrait
 @include for-size(tablet-portrait){
   //******** Remove menu and social navs
   #nav-right, #nav-left{
@@ -111,8 +123,12 @@
   }
 }
 
-//******** Remove burger menu
+//******** Tablet Landscape
 @include for-size(tablet-landscape){
+  .mainTitle{
+    margin: 15px 0 12px;
+  }
+
   .burger{
     display: none;
   }
@@ -126,7 +142,7 @@
   }
 
   .contactForm{
-    margin: 0 15%;
+
     p{
       padding: 0 5rem;
       margin: 2%
@@ -147,11 +163,14 @@
   }
 }
 
+//******** Desktop
 @include for-size(desktop){
-
+  //******** Display change of contact form
   .contactForm{
     flex-direction: row;
     height: 60vh;
+    margin: 10% 15%;
+
     p{
       padding: 0 2rem;
     }
@@ -171,6 +190,7 @@
   }
 }
 
+//******** Big Desktop
 @include for-size(big-desktop){
   .contactForm{
     flex-direction: row;

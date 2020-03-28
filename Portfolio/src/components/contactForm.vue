@@ -1,5 +1,6 @@
 <template>
   <div class="commonText">
+    <!-- ****** Form for submit the message ****** -->
     <form
       name="contact"
       method="post"
@@ -44,13 +45,12 @@
       <div class="modal-mask" v-if="showModal" @close="showModal = false">
         <div class="modal-wrapper">
           <div class="modal-container">
-            <div class="modal-header">
-              <slot name="header">Success submit!</slot>
-            </div>
-            <div class="modal-footer">
-              <!-- <button class="modal-default-button" @click="showModal = false">OK</button> -->
-              <button class="modal-default-button" @click="showModal = false">OK</button>
-            </div>
+            <div name="header" class="modal-message">Success submit!</div>
+            <button class="modal-close-button" @click="showModal = false">
+              <div class="rigth-line">
+                <div class="left-line"></div>
+              </div>
+            </button>
           </div>
         </div>
       </div>
@@ -74,8 +74,9 @@ export default {
         )
         .join("&");
     },
+
+    //******** Make the post through the API and show modal
     handleSubmit(e) {
-      let showModal = false;
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -92,7 +93,9 @@ export default {
 </script>
 
 <style lang="scss">
+//******** Styles for Modal
 .modal-mask {
+  font-family: "League Spartan";
   position: fixed;
   top: 0;
   left: 0;
@@ -101,37 +104,84 @@ export default {
   background-color: rgba(0, 0, 0, 0.7);
   display: table;
   transition: opacity 0.3s ease;
+
+  .modal-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .modal-container {
+    width: 175px;
+    margin: 0 auto;
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .modal-message {
+      width: 250px;
+      color: rgb(19, 185, 19);
+      font-size: 1.4rem;
+      padding: 25px 0;
+    }
+
+    .modal-close-button {
+      margin-top: 10px;
+      border: none;
+      background: transparent;
+      padding: 5px 15px;
+
+      .rigth-line {
+        height: 25px;
+        width: 2px;
+        background-color: black;
+        transform: rotate(45deg);
+        z-index: 1;
+      }
+
+      .left-line {
+        height: 25px;
+        width: 2px;
+        background-color: black;
+        transform: rotate(90deg);
+        z-index: 2;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        animation: rotation 2s linear 0s infinite;
+        cursor: pointer;
+      }
+
+      @keyframes rotation {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
 }
 
-.modal-wrapper {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.modal-container {
-  width: 300px;
-  margin: 0 auto;
-  padding: 4rem;
-  background-color: #fff;
-  border-radius: 2px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
-  transition: all 0.3s ease;
-}
-
-.modal-default-button {
-  float: right;
-}
-
+//******** Animation for modal enter and leave
 .modal-enter {
   opacity: 0;
 }
 
-.modal-leave-active {
+.modal-leave-to {
   opacity: 0;
 }
 
 .modal-enter .modal-container,
-.modal-leave-active .modal-container {
-  transform: scale(1.1);
+.modal-leave-to .modal-container {
+  transform: scale(1.5);
 }
 </style>

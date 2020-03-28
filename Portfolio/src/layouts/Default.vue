@@ -23,7 +23,7 @@ export default {
 
 <style lang="scss">
 .layout {
-  margin: 2.5% 8%;
+  margin: 0 8%;
 }
 
 #nav-right {
