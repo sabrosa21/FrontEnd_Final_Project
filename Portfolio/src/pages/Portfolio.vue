@@ -31,7 +31,7 @@ export default {
       cards: [
         {
           id: 1,
-          cardImg: "~/portfolio_img/starter_page2_rasterized.png",
+          cardImg: "/portfolio_img/starter_page2_rasterized.png",
           cardTitle: "Harry Potter",
           cardProjtype: "Training",
           cardStack: "HTML5 | CSS3",
@@ -39,7 +39,7 @@ export default {
         },
         {
           id: 2,
-          cardImg: "~/assets/images/starter_page2_rasterized.png",
+          cardImg: "/portfolio_img/starter_page2_rasterized.png",
           cardTitle: "Memmory Game",
           cardProjtype: "Training",
           cardStack: "HTML5 | SCSS | JS",
@@ -47,7 +47,7 @@ export default {
         },
         {
           id: 3,
-          cardImg: "~/assets/images/starter_page2_rasterized.png",
+          cardImg: "/portfolio_img/starter_page2_rasterized.png",
           cardTitle: "Comming soon",
           cardProjtype: "Training",
           cardStack: "HTML5 | CSS3",
@@ -55,7 +55,7 @@ export default {
         },
         {
           id: 4,
-          cardImg: "~/assets/images/starter_page2_rasterized.png",
+          cardImg: "/portfolio_img/starter_page2_rasterized.png",
           cardTitle: "Teste4",
           cardProjtype: "Training",
           cardStack: "HTML5 | CSS3",
@@ -63,7 +63,7 @@ export default {
         },
         {
           id: 5,
-          cardImg: "~/assets/images/starter_page2_rasterized.png",
+          cardImg: "/portfolio_img/starter_page2_rasterized.png",
           cardTitle: "Teste5",
           cardProjtype: "Training",
           cardStack: "HTML5 | CSS3",
@@ -71,7 +71,7 @@ export default {
         },
         {
           id: 6,
-          cardImg: "~/assets/images/starter_page2_rasterized.png",
+          cardImg: "/portfolio_img/starter_page2_rasterized.png",
           cardTitle: "Teste6",
           cardProjtype: "Training",
           cardStack: "HTML5 | CSS3",
