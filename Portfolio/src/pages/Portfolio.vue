@@ -31,7 +31,7 @@ export default {
       cards: [
         {
           id: 1,
-          cardImg: "~/assets/images/starter_page2_rasterized.png",
+          cardImg: "~/portfolio_img/starter_page2_rasterized.png",
           cardTitle: "Harry Potter",
           cardProjtype: "Training",
           cardStack: "HTML5 | CSS3",
@@ -40,25 +40,25 @@ export default {
         {
           id: 2,
           cardImg: "~/assets/images/starter_page2_rasterized.png",
-          cardTitle: "Teste2",
+          cardTitle: "Memmory Game",
           cardProjtype: "Training",
-          cardStack: "HTML5 | CSS3 | JS",
-          cardGitlink: "https://github.com/sabrosa21/Testes1"
+          cardStack: "HTML5 | SCSS | JS",
+          cardGitlink: "https://github.com/sabrosa21/MemoryGame"
         },
         {
           id: 3,
           cardImg: "~/assets/images/starter_page2_rasterized.png",
-          cardTitle: "Teste3",
+          cardTitle: "Comming soon",
           cardProjtype: "Training",
-          cardStack: "HTML | CSS",
-          cardGitlink: "https://github.com/sabrosa21/Testes2"
+          cardStack: "HTML5 | CSS3",
+          cardGitlink: "github.com/sabrosa21/gulp-proj-starter"
         },
         {
           id: 4,
           cardImg: "~/assets/images/starter_page2_rasterized.png",
           cardTitle: "Teste4",
           cardProjtype: "Training",
-          cardStack: "HTML | CSS",
+          cardStack: "HTML5 | CSS3",
           cardGitlink: "https://github.com/sabrosa21/Testes3"
         },
         {
@@ -66,7 +66,7 @@ export default {
           cardImg: "~/assets/images/starter_page2_rasterized.png",
           cardTitle: "Teste5",
           cardProjtype: "Training",
-          cardStack: "HTML | CSS",
+          cardStack: "HTML5 | CSS3",
           cardGitlink: "https://github.com/sabrosa21/Testes4"
         },
         {
@@ -74,7 +74,7 @@ export default {
           cardImg: "~/assets/images/starter_page2_rasterized.png",
           cardTitle: "Teste6",
           cardProjtype: "Training",
-          cardStack: "HTML | CSS",
+          cardStack: "HTML5 | CSS3",
           cardGitlink: "https://github.com/sabrosa21/Testes5"
         }
       ]
