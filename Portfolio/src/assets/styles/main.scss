@@ -48,23 +48,23 @@
   }
 
   .navMenu3{
-    top: 161px;
     right: -7.5px;
+    top: 161px;
   }
 
   .navMenu4{
-    top: 214px;
     right: -5px;
+    top: 214px;
   }
 
   .navMenu5{
-    top: 103px;
     right: -8px;
+    top: 103px;
   }
 
   .navMenu6{
-    top: 158px;
     right: -3.5px;
+    top: 158px;
   }
 
   //******** Color the selected nav item
@@ -76,8 +76,8 @@
     }
 
     .textNav{
-      opacity: 1;
       color: $greenLight;
+      opacity: 1;
     }
 
   }
@@ -105,8 +105,8 @@
   }
 
   .contactForm{
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
 }
 
@@ -144,8 +144,8 @@
   .contactForm{
 
     p{
+      margin: 2%;
       padding: 0 5rem;
-      margin: 2%
     }
 
     .cform {
@@ -182,7 +182,7 @@
           font-size: 0.9rem !important;
         }
         textarea{
-          height: 8rem !important; 
+          height: 8rem !important;
         }
       }
       

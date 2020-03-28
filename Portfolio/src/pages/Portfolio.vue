@@ -25,24 +25,24 @@ export default {
   components: {
     card
   },
-  //******* Array with card information
+  //******* Array with each card information
   data() {
     return {
       cards: [
         {
           id: 1,
           cardImg: "~/assets/images/starter_page2_rasterized.png",
-          cardTitle: "Teste1",
+          cardTitle: "Harry Potter",
           cardProjtype: "Training",
-          cardStack: "HTML | CSS",
-          cardGitlink: "https://github.com/sabrosa21/Testes"
+          cardStack: "HTML5 | CSS3",
+          cardGitlink: "https://github.com/sabrosa21/Harry-Potter"
         },
         {
           id: 2,
           cardImg: "~/assets/images/starter_page2_rasterized.png",
           cardTitle: "Teste2",
           cardProjtype: "Training",
-          cardStack: "HTML | CSS",
+          cardStack: "HTML5 | CSS3 | JS",
           cardGitlink: "https://github.com/sabrosa21/Testes1"
         },
         {
@@ -84,16 +84,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+//******* Styling the cards
 .allCards {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   align-items: center;
+  display: flex;
+  flex-wrap: wrap;
   height: 80vh;
+  justify-content: center;
   .eachCard {
     display: flex;
-    justify-content: center;
     flex-basis: 30%;
+    justify-content: center;
     margin: 1%;
     .card {
       margin: 0;

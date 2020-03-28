@@ -7,7 +7,7 @@
         If you think, maybe, I'm the right guy and want to know more info about me,
         please feel free to fill the form and get in touch!
       </p>
-      <!-- componente do form -->
+      <!--***** Contact Form component *****-->
       <contactForm class="cform" />
     </div>
   </Layout>
@@ -26,9 +26,11 @@ export default {
 </script>
 
 <style lang="scss">
+//****** Styling the contact form
 .contactForm {
-  display: flex;
   align-items: center;
+  display: flex;
+
   p {
     width: 100%;
     color: white;
@@ -45,11 +47,11 @@ export default {
 
       input,
       textarea {
-        color: white;
+        background-color: rgba($color: #c5c6c7, $alpha: 0);
         border-radius: 4px;
         border: 1px solid #66fcf1;
-        background-color: rgba($color: #c5c6c7, $alpha: 0);
         box-sizing: border-box;
+        color: white;
         width: 100%;
       }
 
@@ -65,20 +67,19 @@ export default {
 
       textarea {
         height: 5rem;
-        resize: vertical;
-        padding: 0;
         padding-left: 10px;
         padding-top: 10px;
+        resize: vertical;
       }
 
       button {
-        border-radius: 4px;
-        padding: 12px 50px;
-        font-weight: bold;
-        font-family: "League Spartan";
-        color: black;
         background-color: #66fcf1;
+        border-radius: 4px;
+        color: black;
         float: right;
+        font-family: "League Spartan";
+        font-weight: bold;
+        padding: 12px 50px;
         &:hover {
           box-shadow: 0 9px 12px 0 rgba(0, 0, 0, 0.24),
             0 13px 30px 0 rgba(0, 0, 0, 0.19);

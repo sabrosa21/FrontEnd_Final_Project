@@ -18,6 +18,7 @@
     </div>
 
     <h2 class="secTitle">Skills</h2>
+    <!-- ******** Skills component ******** -->
     <skills />
   </Layout>
 </template>
@@ -25,7 +26,6 @@
 <script>
 import skills from "@/components/skills";
 export default {
-  //********* Titulo que aparece na tab *********
   metaInfo: {
     title: "About"
   },
@@ -39,9 +39,9 @@ export default {
 <style lang="scss" scoped>
 .aboutText {
   color: white;
-  padding: 6%;
-  line-height: 1.5rem;
   letter-spacing: 0.4px;
+  line-height: 1.5rem;
+  padding: 6%;
   .colorText {
     color: #66fcf1;
   }

@@ -28,15 +28,15 @@ export default {
 
 #nav-right {
   position: fixed;
-  top: 50%;
   right: 0;
+  top: 50%;
   transform: translate(-50%, -50%);
 }
 
 #nav-left {
+  left: 40px;
   position: fixed;
   top: 50%;
-  left: 40px;
   transform: translate(-50%, -50%);
 }
 </style>

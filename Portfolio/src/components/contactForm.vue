@@ -95,62 +95,60 @@ export default {
 <style lang="scss">
 //******** Styles for Modal
 .modal-mask {
-  font-family: "League Spartan";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   display: table;
+  font-family: "League Spartan";
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
   transition: opacity 0.3s ease;
+  width: 100%;
 
   .modal-wrapper {
     display: table-cell;
-    vertical-align: middle;
     text-align: center;
+    vertical-align: middle;
   }
 
   .modal-container {
-    width: 175px;
-    margin: 0 auto;
-    padding: 3rem;
+    align-items: center;
     background-color: #fff;
     border-radius: 4px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
-    transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    margin: 0 auto;
+    padding: 3rem;
+    transition: all 0.3s ease;
+    width: 175px;
 
     .modal-message {
-      width: 250px;
       color: rgb(19, 185, 19);
       font-size: 1.4rem;
       padding: 25px 0;
+      width: 250px;
     }
 
     .modal-close-button {
-      margin-top: 10px;
-      border: none;
       background: transparent;
+      border: none;
+      margin-top: 10px;
       padding: 5px 15px;
 
       .rigth-line {
-        height: 25px;
-        width: 2px;
         background-color: black;
+        height: 25px;
         transform: rotate(45deg);
-        z-index: 1;
+        width: 2px;
       }
 
       .left-line {
-        height: 25px;
-        width: 2px;
         background-color: black;
+        height: 25px;
         transform: rotate(90deg);
-        z-index: 2;
+        width: 2px;
       }
 
       &:focus {

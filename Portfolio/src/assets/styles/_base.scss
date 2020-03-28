@@ -1,8 +1,8 @@
 body{
-  font-family: $primaryFont;
   background-color: $bgColor;
-  font-size: $fontSize;
   display: flex;
+  font-family: $primaryFont;
+  font-size: $fontSize;
   justify-content: center;
   //overflow: hidden;
 }

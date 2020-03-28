@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <g-image class="cardImage" :src= cardImg />
+    <g-image class="cardImage" :src="cardImg" />
     <div class="cardContent">
       <h3>{{cardTitle}}</h3>
       <!-- Project type: Training, Professional -->
@@ -11,7 +11,7 @@
     </div>
 
     <div class="cardGithub">
-      <a :href= cardGitlink target="_blank" rel="noopener noreferrer">
+      <a :href="cardGitlink" target="_blank" rel="noopener noreferrer">
         <githubCard class="giticon" />
       </a>
     </div>
@@ -78,6 +78,10 @@ export default {
   justify-content: space-evenly;
   padding-left: 15px;
   padding-right: 15px;
+
+  p {
+    font-size: 0.8rem;
+  }
 }
 
 .cardStack {
@@ -88,6 +92,9 @@ export default {
   justify-content: space-around;
   align-items: center;
   border-radius: 0 0 5px 5px;
+  p {
+    font-size: 0.8rem;
+  }
 }
 
 .cardGithub a {

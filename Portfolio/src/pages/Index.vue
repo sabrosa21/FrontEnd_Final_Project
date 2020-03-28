@@ -9,7 +9,6 @@ import burgerMenu from "@/components/burgerMenu";
 
 export default {
   metaInfo: {
-    //********* Titulo que aparece na tab
     title: "Home"
   },
   components: {
@@ -20,11 +19,11 @@ export default {
 
 <style>
 .mainImage {
-  width: 80%;
   height: auto;
+  left: 50%;
   position: fixed;
   top: 55%;
-  left: 50%;
   transform: translate(-50%, -50%);
+  width: 80%;
 }
 </style>
