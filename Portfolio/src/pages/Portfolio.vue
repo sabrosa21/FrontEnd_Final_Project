@@ -40,23 +40,23 @@ export default {
         {
           id: 2,
           cardImg: "/portfolio_img/starter_page2_rasterized.png",
-          cardTitle: "Memmory Game",
+          cardTitle: "Hang Man",
           cardProjtype: "Training",
-          cardStack: "HTML5 | SCSS | JS",
-          cardGitlink: "https://github.com/sabrosa21/MemoryGame"
+          cardStack: "HTML5 | SCSS | JQuery | Gulp",
+          cardGitlink: "https://github.com/sabrosa21/HangMan"
         },
         {
           id: 3,
           cardImg: "/portfolio_img/starter_page2_rasterized.png",
-          cardTitle: "Comming soon",
+          cardTitle: "Memmory Game",
           cardProjtype: "Training",
-          cardStack: "HTML5 | CSS3",
-          cardGitlink: "github.com/sabrosa21/gulp-proj-starter"
+          cardStack: "HTML5 | SCSS | JS | Gulp",
+          cardGitlink: "https://github.com/sabrosa21/MemoryGame"
         },
         {
           id: 4,
           cardImg: "/portfolio_img/starter_page2_rasterized.png",
-          cardTitle: "Teste4",
+          cardTitle: "Comming soon",
           cardProjtype: "Training",
           cardStack: "HTML5 | CSS3",
           cardGitlink: "https://github.com/sabrosa21/Testes3"
@@ -83,7 +83,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 //******* Styling the cards
 .allCards {
   align-items: center;
@@ -95,7 +95,6 @@ export default {
     display: flex;
     flex-basis: 30%;
     justify-content: center;
-    margin: 1%;
     .card {
       margin: 0;
     }

@@ -15,9 +15,12 @@ body{
   text-align: center;
 }
 
+.secTitle{
+  color: $greenLight;
+}
+
 //******** Style for all common text
 .commonText{
   font-family: $secondaryFont;
-  margin-bottom: 1.5rem;
 }
 

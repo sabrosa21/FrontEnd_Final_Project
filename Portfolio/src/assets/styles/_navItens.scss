@@ -1,0 +1,80 @@
+//******** Style the nav itens
+.navLi{
+  text-align: center;
+
+  .navIcon{
+    fill: $greyLight;
+    height: 2.5rem;
+    padding: 20% 0;
+    width: 2.5rem;
+  }
+
+  .textNav {
+    font-size: 0.8rem;
+    opacity: 0;
+    position: absolute;
+  }
+
+  .navIcon, .textNav{
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  &:hover{
+    .navIcon{
+      opacity: 0;
+    }
+
+    .textNav{
+      opacity: 1;
+    }
+  }
+
+
+  .navMenu1{
+    top: 40px;
+  }
+
+  .navMenu2{
+    top: 95px;
+  }
+
+  .navMenu3{
+    right: -7.5px;
+    top: 161px;
+  }
+
+  .navMenu4{
+    right: -5px;
+    top: 214px;
+  }
+
+  .navMenu5{
+    right: -8px;
+    top: 103px;
+  }
+
+  .navMenu6{
+    right: -3.5px;
+    top: 158px;
+  }
+
+  //******** Color the selected nav item
+  .active--exact{
+    color: $greenLight !important;
+
+    .navIcon{
+      opacity: 0;
+    }
+
+    .textNav{
+      color: $greenLight;
+      opacity: 1;
+    }
+
+  }
+
+  .active--exact > svg{
+    fill: $greenLight !important;
+  }
+
+}

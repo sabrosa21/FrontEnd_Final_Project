@@ -25,6 +25,7 @@
 
 <script>
 import skills from "@/components/skills";
+
 export default {
   metaInfo: {
     title: "About"
@@ -36,14 +37,59 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .aboutText {
   color: white;
   letter-spacing: 0.4px;
   line-height: 1.5rem;
-  padding: 6%;
-  .colorText {
-    color: #66fcf1;
+  padding: 5% 0;
+}
+
+.colorText {
+  color: #66fcf1;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 3%;
+  border-bottom: 1px solid #66fcf1;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .eachSkill,
+    p {
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .eachSkill {
+      height: 100px;
+      width: 80px;
+      margin: 10px;
+      filter: grayscale(100%);
+      transition: filter 0.5s ease-in-out;
+
+      &:hover {
+        filter: none;
+      }
+    }
+
+    p {
+      opacity: 0;
+    }
+
+    &:hover {
+      p {
+        opacity: 1;
+      }
+    }
   }
 }
 </style>
