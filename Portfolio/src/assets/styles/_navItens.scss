@@ -60,8 +60,6 @@
 
   //******** Color the selected nav item
   .active--exact{
-    color: $greenLight !important;
-
     .navIcon{
       opacity: 0;
     }
@@ -71,10 +69,6 @@
       opacity: 1;
     }
 
-  }
-
-  .active--exact > svg{
-    fill: $greenLight !important;
   }
 
 }

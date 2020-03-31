@@ -41,7 +41,7 @@ export default {
 .aboutText {
   color: white;
   letter-spacing: 0.4px;
-  line-height: 1.5rem;
+  line-height: 1.8rem;
   padding: 5% 0;
 }
 
@@ -59,10 +59,13 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
   div {
     display: flex;
     align-items: center;
     flex-direction: column;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease-in-out;
 
     .eachSkill,
     p {
@@ -73,12 +76,6 @@ h2 {
       height: 100px;
       width: 80px;
       margin: 10px;
-      filter: grayscale(100%);
-      transition: filter 0.5s ease-in-out;
-
-      &:hover {
-        filter: none;
-      }
     }
 
     p {
@@ -86,6 +83,7 @@ h2 {
     }
 
     &:hover {
+      filter: none;
       p {
         opacity: 1;
       }

@@ -61,6 +61,7 @@ export default {
   flex-direction: column;
   font-family: sans-serif;
   height: 200px;
+  transition: box-shadow 0.5s ease-in-out;
   white-space: nowrap;
   width: 250px;
 
@@ -68,8 +69,8 @@ export default {
     box-shadow: 0 0 20px rgba(101, 250, 239, 0.5);
   }
   .imageContent {
-    text-align: center;
     height: 60%;
+    text-align: center;
     .cardImage {
       height: 100%;
       width: 50%;

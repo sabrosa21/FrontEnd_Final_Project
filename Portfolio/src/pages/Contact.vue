@@ -34,6 +34,7 @@ export default {
   p {
     width: 100%;
     color: white;
+    line-height: 1.8rem;
   }
 
   .cform {
@@ -53,6 +54,22 @@ export default {
         box-sizing: border-box;
         color: white;
         width: 100%;
+
+        &:valid {
+          box-shadow: 0 0 5px rgb(0, 255, 0);
+          border-color: rgb(0, 255, 0);
+        }
+
+        &:invalid:not(:focus):not(:placeholder-shown) {
+          box-shadow: 0 0 5px red;
+          border-color: red;
+        }
+
+        &:focus {
+          outline: none;
+          box-shadow: 0 0 10px rgb(3, 181, 235);
+          border-color: rgb(3, 181, 235);
+        }
       }
 
       input,

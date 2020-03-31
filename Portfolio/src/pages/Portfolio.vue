@@ -64,7 +64,7 @@ export default {
         {
           id: 5,
           cardImg: "/portfolio_img/starter_page2_rasterized.png",
-          cardTitle: "Teste5",
+          cardTitle: "Coming Soon",
           cardProjtype: "Training",
           cardStack: "HTML5 | CSS3",
           cardGitlink: "https://github.com/sabrosa21/Testes4"
@@ -72,7 +72,7 @@ export default {
         {
           id: 6,
           cardImg: "/portfolio_img/starter_page2_rasterized.png",
-          cardTitle: "Teste6",
+          cardTitle: "Coming Soon",
           cardProjtype: "Training",
           cardStack: "HTML5 | CSS3",
           cardGitlink: "https://github.com/sabrosa21/Testes5"
