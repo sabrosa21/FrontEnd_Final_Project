@@ -68,7 +68,7 @@ export default {
     }
   },
   //******** Before rendering the app
-  beforeMount() {
+  mounted() {
     this.gettingLocation = true;
     this.geoLocation();
   }
