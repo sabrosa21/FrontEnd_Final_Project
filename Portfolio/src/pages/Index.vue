@@ -2,14 +2,14 @@
   <Layout>
     <g-image class="mainImage" src="~/assets/images/starterPage.png"></g-image>
 
-    <footer class="location">
-      <!-- ******** Text to display while getting the location ******** -->
+    <!-- <footer class="location">
+      ******** Text to display while getting the location ********
       <div v-if="gettingLocation">
         <i>Getting your location...</i>
       </div>
-      <!-- ******** Display location and temprature ******** -->
+      ******** Display location and temprature ********
       <div v-if="location">{{ location }}, {{ currentTemp }} °C</div>
-    </footer>
+    </footer>-->
   </Layout>
 </template>
 
@@ -22,12 +22,12 @@ export default {
   },
   components: {
     burgerMenu
-  },
-  data() {
+  }
+  /* data() {
     return {
-      location: null,
-      gettingLocation: false,
-      currentTemp: null
+      //location: null,
+      //gettingLocation: false,
+      //currentTemp: null
     };
   },
   methods: {
@@ -71,7 +71,7 @@ export default {
   beforeMount() {
     this.gettingLocation = true;
     this.geoLocation();
-  }
+  } */
 };
 </script>
 
