@@ -25,9 +25,9 @@ export default {
   },
   data() {
     return {
-      //location: null,
-      //gettingLocation: false,
-      //currentTemp: null
+      location: null,
+      gettingLocation: false,
+      currentTemp: null
     };
   },
   methods: {
