@@ -55,7 +55,8 @@ export default {
     buildUrl(position) {
       const lat = position.coords.latitude;
       const lon = position.coords.longitude;
-      const API = "http://api.openweathermap.org/data/2.5/weather?units=metric";
+      const API =
+        "https://api.openweathermap.org/data/2.5/weather?units=metric";
       const KEY = "&APPID=e5b8f6b3c672e0dd19ef7ebb764f876b";
 
       this.getWeather(API + "&lat=" + lat + "&lon=" + lon + KEY);
