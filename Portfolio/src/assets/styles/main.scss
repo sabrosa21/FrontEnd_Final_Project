@@ -53,6 +53,14 @@
     flex-direction: column;
     margin: 6% 13%;
   }
+
+  .eachCard {
+    margin: auto;
+  }
+
+  .aboutText{
+    padding-top: 15% !important;
+  }
 }
 
 //******** Tablet Landscape
@@ -120,6 +128,11 @@
       
     }
   }
+
+  .allCards{
+    height: 55vh !important;
+    padding: 15% 0;
+  }
 }
 
 //******** Big Desktop
@@ -129,5 +142,9 @@
     p{
       padding: 0 6rem;
     }
+  }
+
+  .allCards{
+    padding: 10% 0;
   }
 }

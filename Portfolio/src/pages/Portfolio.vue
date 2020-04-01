@@ -98,6 +98,8 @@ export default {
   flex-wrap: wrap;
   height: 80vh;
   justify-content: center;
+  margin: auto;
+  //padding: 5% 0;
   .eachCard {
     display: flex;
     flex-basis: 30%;

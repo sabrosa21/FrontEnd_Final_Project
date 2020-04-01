@@ -2,7 +2,7 @@
   <Layout>
     <h1 class="mainTitle">About</h1>
     <div class="commonText aboutText">
-      Hello World, my name is
+      <span class="colorText changeFont">Hello World</span>, my name is
       <span class="colorText">Eurico Correia</span>, a Portuguese soon-to-be
       <span class="colorText">developer</span> who lives in
       <span class="colorText">Aveiro</span>. I developed my taste for
@@ -43,10 +43,16 @@ export default {
   letter-spacing: 0.4px;
   line-height: 1.8rem;
   padding: 5% 0;
-}
 
-.colorText {
-  color: #66fcf1;
+  .changeFont {
+    font-family: "Times New Roman";
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .colorText {
+    color: #66fcf1;
+  }
 }
 
 h2 {
@@ -79,6 +85,7 @@ h2 {
     }
 
     p {
+      color: #66fcf1;
       opacity: 0;
     }
 
