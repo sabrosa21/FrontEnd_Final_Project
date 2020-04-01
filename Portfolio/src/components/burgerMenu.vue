@@ -6,16 +6,16 @@
     </div>
     <ul class="nav">
       <li>
-        <g-link class="nav_link" to="/">Home</g-link>
+        <g-link class="nav_link" to="/" rel="noopener">Home</g-link>
       </li>
       <li>
-        <g-link class="nav_link" to="/about/">About</g-link>
+        <g-link class="nav_link" to="/about/" rel="noopener">About</g-link>
       </li>
       <li>
-        <g-link class="nav_link" to="/portfolio/">Portfolio</g-link>
+        <g-link class="nav_link" to="/portfolio/" rel="noopener">Portfolio</g-link>
       </li>
       <li>
-        <g-link class="nav_link" to="/contact/">Contact</g-link>
+        <g-link class="nav_link" to="/contact/" rel="noopener">Contact</g-link>
       </li>
     </ul>
   </label>

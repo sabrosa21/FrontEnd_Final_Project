@@ -2,19 +2,19 @@
   <div>
     <ul>
       <li class="navLi">
-        <a href="mailto:euricolcorreia@outlook.pt">
+        <a href="mailto:euricolcorreia@outlook.pt" rel="noopener">
           <email class="navIcon" />
           <div class="textNav navMenu1">Email</div>
         </a>
       </li>
       <li class="navLi">
-        <a href="https://pt.linkedin.com/in/euricocorreia/" target="_blank">
+        <a href="https://pt.linkedin.com/in/euricocorreia/" target="_blank" rel="noopener">
           <linkedin class="navIcon" />
           <div class="textNav navMenu5">Linkedin</div>
         </a>
       </li>
       <li class="navLi">
-        <a href="https://github.com/sabrosa21" target="_blank">
+        <a href="https://github.com/sabrosa21" target="_blank" rel="noopener">
           <github class="navIcon" />
           <div class="textNav navMenu6">GitHub</div>
         </a>

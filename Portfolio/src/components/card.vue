@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <div class="imageContent">
-      <g-image class="cardImage" :src="cardImg" />
+      <g-image class="cardImage" :src="cardImg" :alt="cardAlt" />
     </div>
 
     <div class="cardContent">
@@ -48,6 +48,10 @@ export default {
     cardGitlink: {
       type: String,
       required: true
+    },
+    cardAlt: {
+      type: String,
+      required: false
     }
   }
 };

@@ -2,25 +2,25 @@
   <div>
     <ul>
       <li class="navLi">
-        <g-link to="/">
+        <g-link to="/" rel="noopener">
           <home class="navIcon" />
           <div class="textNav navMenu1">Home</div>
         </g-link>
       </li>
       <li class="navLi">
-        <g-link to="/about/">
+        <g-link to="/about/" rel="noopener">
           <about class="navIcon" />
           <div class="textNav navMenu2">About</div>
         </g-link>
       </li>
       <li class="navLi">
-        <g-link to="/portfolio/">
+        <g-link to="/portfolio/" rel="noopener">
           <portfolio class="navIcon" />
           <div class="textNav navMenu3">Portfolio</div>
         </g-link>
       </li>
       <li class="navLi">
-        <g-link to="/contact/">
+        <g-link to="/contact/" rel="noopener">
           <contact class="navIcon" />
           <div class="textNav navMenu4">Contact</div>
         </g-link>

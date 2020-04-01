@@ -9,6 +9,7 @@
           :cardProjtype="item.cardProjtype"
           :cardStack="item.cardStack"
           :cardGitlink="item.cardGitlink"
+          :cardAlt="item.cardAlt"
         />
       </div>
     </div>
@@ -35,15 +36,17 @@ export default {
           cardTitle: "Harry Potter",
           cardProjtype: "Training",
           cardStack: "HTML5 | CSS3",
-          cardGitlink: "https://github.com/sabrosa21/Harry-Potter"
+          cardGitlink: "https://github.com/sabrosa21/Harry-Potter",
+          cardAlt: "Harry Potter site"
         },
         {
           id: 2,
           cardImg: "/portfolio_img/starter_page2_rasterized.png",
-          cardTitle: "Hang Man",
+          cardTitle: "HangMan",
           cardProjtype: "Training",
           cardStack: "HTML5 | SCSS | JQuery | Gulp",
-          cardGitlink: "https://github.com/sabrosa21/HangMan"
+          cardGitlink: "https://github.com/sabrosa21/HangMan",
+          cardAlt: "Hangman game"
         },
         {
           id: 3,
@@ -51,7 +54,8 @@ export default {
           cardTitle: "Memmory Game",
           cardProjtype: "Training",
           cardStack: "HTML5 | SCSS | JS | Gulp",
-          cardGitlink: "https://github.com/sabrosa21/MemoryGame"
+          cardGitlink: "https://github.com/sabrosa21/MemoryGame",
+          cardAlt: "Memmory game"
         },
         {
           id: 4,
@@ -59,7 +63,8 @@ export default {
           cardTitle: "Comming soon",
           cardProjtype: "Training",
           cardStack: "HTML5 | CSS3",
-          cardGitlink: "https://github.com/sabrosa21/Testes3"
+          cardGitlink: "https://github.com/sabrosa21/Testes3",
+          cardAlt: "Coming soon"
         },
         {
           id: 5,
@@ -67,7 +72,8 @@ export default {
           cardTitle: "Coming Soon",
           cardProjtype: "Training",
           cardStack: "HTML5 | CSS3",
-          cardGitlink: "https://github.com/sabrosa21/Testes4"
+          cardGitlink: "https://github.com/sabrosa21/Testes4",
+          cardAlt: "Coming soon"
         },
         {
           id: 6,
@@ -75,7 +81,8 @@ export default {
           cardTitle: "Coming Soon",
           cardProjtype: "Training",
           cardStack: "HTML5 | CSS3",
-          cardGitlink: "https://github.com/sabrosa21/Testes5"
+          cardGitlink: "https://github.com/sabrosa21/Testes5",
+          cardAlt: "Coming soon"
         }
       ]
     };
