@@ -40,6 +40,13 @@
   .eachCard {
     margin-bottom: 40px;
   }
+
+  .mainSVG{
+    svg {
+      height: auto;
+      width: 100%;
+    }
+  }
 }
 
 //******** Tablet Portrait
@@ -67,6 +74,11 @@
 @include for-size(tablet-landscape){
   .mainTitle{
     margin: 15px 0 12px;
+  }
+
+  //******** Size of main SVG image in Home page
+  .mainImage{
+    width: 60% !important;
   }
 
   .burger{
@@ -105,6 +117,10 @@
 
 //******** Desktop
 @include for-size(desktop){
+  //******** Size of main SVG image in Home page
+  .mainImage{
+    width: 40% !important;
+  }
   //******** Display change of contact form
   .contactForm{
     flex-direction: row;
