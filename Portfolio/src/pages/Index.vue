@@ -453,6 +453,6 @@ export default {
 }
 
 .mainSvg-enter-active {
-  transition: stroke-dashoffset 2s ease 1s;
+  transition: stroke-dashoffset 1.5s ease;
 }
 </style>
