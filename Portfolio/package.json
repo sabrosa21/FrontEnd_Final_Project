@@ -7,7 +7,7 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "gridsome": "^0.7.0",
     "gridsome-plugin-sass-resources-loader": "0.0.3",
     "stylelint-scss": "^3.14.2",
